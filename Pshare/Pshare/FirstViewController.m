@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  FirstViewController.m
 //  Pshare
 //
 //  Created by Tiago Magalhães on 27/05/16.
 //  Copyright © 2016 Tiago Magalhães. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "FirstViewController.h"
 
-@interface ViewController ()
+@interface FirstViewController ()
 
 @end
 
-@implementation ViewController
+@implementation FirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
