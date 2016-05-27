@@ -61,11 +61,7 @@
     if (state != MCSessionStateConnecting) {
         if (state == MCSessionStateConnected) {
             [_arrConnectedDevices addObject:peerDisplayName];
-            [_tblConnectedDevices reloadData];
-            
-            BOOL peersExist = ([[_appDelegate.mpManager.session connectedPeers] count] == 0);
-            [_btnDisconnect setEnabled:!peersExist];
-            [_txtName setEnabled:peersExist];
+
         }
         
         else if (state == MCSessionStateNotConnected){
@@ -75,6 +71,11 @@
                 [_arrConnectedDevices removeObjectAtIndex:indexOfPeer];
             }
         }
+        [_tblConnectedDevices reloadData];
+        
+        BOOL peersExist = ([[_appDelegate.mpManager.session connectedPeers] count] == 0);
+        [_btnDisconnect setEnabled:!peersExist];
+        [_txtName setEnabled:peersExist];
     }
 }
 
@@ -97,12 +98,14 @@
 
 
 - (IBAction)disconnect:(id)sender {
+    [_arrConnectedDevices removeAllObjects];
+    [_tblConnectedDevices reloadData];
+    
     [_appDelegate.mpManager.session disconnect];
     
     _txtName.enabled = YES;
     
-    [_arrConnectedDevices removeAllObjects];
-    [_tblConnectedDevices reloadData];
+
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
@@ -142,8 +145,8 @@
 
 - (IBAction)browseForDevices:(id)sender {
     [[_appDelegate mpManager] setupMCBrowser];
-    //[[[_appDelegate mpManager] browser] setDelegate:self];
-    [_appDelegate.mpManager.browser setDelegate:self];
+    [[[_appDelegate mpManager] browser] setDelegate:self];
+    //[_appDelegate.mpManager.browser setDelegate:self];
     [self presentViewController:[[_appDelegate mpManager] browser] animated:YES completion:nil];
 }
 
