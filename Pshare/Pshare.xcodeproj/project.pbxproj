@@ -14,6 +14,7 @@
 		C0D609001CF8A2DB00C3E9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0D608FE1CF8A2DB00C3E9C2 /* Main.storyboard */; };
 		C0D609021CF8A2DB00C3E9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0D609011CF8A2DB00C3E9C2 /* Assets.xcassets */; };
 		C0D609051CF8A2DB00C3E9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0D609031CF8A2DB00C3E9C2 /* LaunchScreen.storyboard */; };
+		C0D6090E1CF8ACF000C3E9C2 /* ConnectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D6090D1CF8ACF000C3E9C2 /* ConnectionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		C0D609011CF8A2DB00C3E9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0D609041CF8A2DB00C3E9C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0D609061CF8A2DB00C3E9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0D6090C1CF8ACF000C3E9C2 /* ConnectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionsViewController.h; sourceTree = "<group>"; };
+		C0D6090D1CF8ACF000C3E9C2 /* ConnectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				C0D608F91CF8A2DB00C3E9C2 /* FirstViewController.m */,
 				C0D608FB1CF8A2DB00C3E9C2 /* SecondViewController.h */,
 				C0D608FC1CF8A2DB00C3E9C2 /* SecondViewController.m */,
+				C0D6090C1CF8ACF000C3E9C2 /* ConnectionsViewController.h */,
+				C0D6090D1CF8ACF000C3E9C2 /* ConnectionsViewController.m */,
 				C0D608FE1CF8A2DB00C3E9C2 /* Main.storyboard */,
 				C0D609011CF8A2DB00C3E9C2 /* Assets.xcassets */,
 				C0D609031CF8A2DB00C3E9C2 /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D6090E1CF8ACF000C3E9C2 /* ConnectionsViewController.m in Sources */,
 				C0D608FD1CF8A2DB00C3E9C2 /* SecondViewController.m in Sources */,
 				C0D608F71CF8A2DB00C3E9C2 /* AppDelegate.m in Sources */,
 				C0D608FA1CF8A2DB00C3E9C2 /* FirstViewController.m in Sources */,
