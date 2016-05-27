@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MPManager.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (nonatomic, strong) MPManager *mpManager;
 
 @end
 
