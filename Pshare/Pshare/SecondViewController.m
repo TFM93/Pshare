@@ -11,18 +11,29 @@
 
 @interface SecondViewController ()
 @property (nonatomic, strong) AppDelegate *appDelegate;
-//TODO- declare string array with games
-//TODO- declare a string array with connected players, the first should be all players
+
 
 @end
 
 @implementation SecondViewController
 
+//declare string array with games
+NSArray *games;
+//declare a string array with connected players, the first should be all players
+NSArray *peersNames;
+NSArray *peersIds;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    games = @[@"Select a Game",@"Tic Tac Toe",@"Game2",@"Game3",@"Game4",@"Game5",@"Game6"];
+    //Todo- get all peers names
+    peersNames = @[@"All Peers"];
+    peersIds =@[@-1];
+
+    
     // Do any additional setup after loading the view, typically from a nib.
     _appDelegate = (AppDelegate *)UIApplication.sharedApplication.delegate;
-    _gameDesc.text = @"View loaded";
+    
     
 }
 
