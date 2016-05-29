@@ -7,8 +7,12 @@
 //
 
 #import "SecondViewController.h"
+#import "AppDelegate.h"
 
 @interface SecondViewController ()
+@property (nonatomic, strong) AppDelegate *appDelegate;
+//TODO- declare string array with games
+//TODO- declare a string array with connected players, the first should be all players
 
 @end
 
@@ -17,6 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _appDelegate = (AppDelegate *)UIApplication.sharedApplication.delegate;
+    _gameDesc.text = @"View loaded";
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,5 +32,16 @@
 }
 
 - (IBAction)playButton:(UIButton *)sender {
+    //send to the selected game activity
 }
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 2;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    //TODO
+    return 2;
+}
+
 @end
