@@ -10,6 +10,9 @@
 
 @interface SecondViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *gameDesc;
+@property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
+- (IBAction)playButton:(UIButton *)sender;
 
 @end
 
