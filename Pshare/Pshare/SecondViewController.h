@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *gameDesc;
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
 - (IBAction)playButton:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UIButton *buttonP;
 
 @end
 

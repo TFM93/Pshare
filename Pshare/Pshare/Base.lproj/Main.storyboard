@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e12-dV-lPd">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e12-dV-lPd">
                                 <rect key="frame" x="0.0" y="20" width="320" height="283"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Welcome to Pshare Chat                                           First define your multipeer connection in the connection manager than you're read to chat.              Enjoy :)                                                                       </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="a23-yK-4it"/>
@@ -104,6 +104,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5S8-vT-NPX">
+                                <rect key="frame" x="0.0" y="62" width="320" height="208"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="B90-8K-lH3"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="ud8-f7-93g"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgf-l5-c1B">
+                                <rect key="frame" x="10" y="278" width="290" height="194"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chose the game and the player:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcJ-Vr-YgG">
+                                <rect key="frame" x="20" y="33" width="280" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Game View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
                                 <rect key="frame" x="67" y="263" width="185.5" height="41.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -117,32 +136,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5S8-vT-NPX">
-                                <rect key="frame" x="0.0" y="74" width="320" height="234"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="B90-8K-lH3"/>
-                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="ud8-f7-93g"/>
-                                </connections>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mnp-tX-07O">
-                                <rect key="frame" x="128" y="425" width="64" height="30"/>
+                                <rect key="frame" x="123" y="471" width="64" height="30"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
                                     <action selector="playButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Nzc-EK-VVi"/>
+                                    <segue destination="uEm-Lm-8z5" kind="show" id="CTZ-sQ-aQY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgf-l5-c1B">
-                                <rect key="frame" x="28" y="316" width="264" height="101"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chose the game and the player:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcJ-Vr-YgG">
-                                <rect key="frame" x="20" y="33" width="280" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -160,6 +161,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Game" image="first" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="buttonP" destination="Mnp-tX-07O" id="jht-qm-Fc8"/>
                         <outlet property="gameDesc" destination="Fgf-l5-c1B" id="C9D-L1-LgG"/>
                         <outlet property="pickerView" destination="5S8-vT-NPX" id="d3W-aw-PNd"/>
                     </connections>
@@ -231,6 +233,105 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="1017"/>
         </scene>
+        <!--TicTacToe-->
+        <scene sceneID="3mW-Oe-LvE">
+            <objects>
+                <viewController title="TicTacToe" id="uEm-Lm-8z5" customClass="TTTViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j0t-Fi-5a6"/>
+                        <viewControllerLayoutGuide type="bottom" id="rFu-NA-M3U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pcf-vG-h5F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="board" highlightedImage="board" translatesAutoresizingMaskIntoConstraints="NO" id="jSb-xC-fn3">
+                                <rect key="frame" x="9" y="93" width="302" height="449"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZXw-ni-dz6">
+                                <rect key="frame" x="14" y="1" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxv-BO-edA">
+                                <rect key="frame" x="241" y="153" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-oS-bvg">
+                                <rect key="frame" x="20" y="28" width="46" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8rJ-Kc-sve" kind="show" id="ti0-Mf-Smn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFN-vX-03T">
+                                <rect key="frame" x="79" y="32" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.0015657565090805292" green="0.72878795862197876" blue="0.99933415651321411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="APT-cU-guh">
+                                <rect key="frame" x="14" y="121" width="85" height="94"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DsE-w4-cEd">
+                                <rect key="frame" x="14" y="265" width="85" height="94"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UpN-ns-pSy">
+                                <rect key="frame" x="14" y="416" width="85" height="94"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Gi-lf-m6H">
+                                <rect key="frame" x="226" y="416" width="85" height="94"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ioj-pU-HuV">
+                                <rect key="frame" x="226" y="265" width="85" height="94"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gGm-4h-NEW">
+                                <rect key="frame" x="226" y="121" width="85" height="94"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="csn-Ob-QIH">
+                                <rect key="frame" x="125" y="265" width="85" height="94"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TVb-Dv-Gtq">
+                                <rect key="frame" x="118" y="121" width="85" height="94"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VS peerPlayer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjB-X8-skp">
+                                <rect key="frame" x="54" y="70" width="226" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jgV-R6-QXk">
+                                <rect key="frame" x="125" y="416" width="85" height="94"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ZXw-ni-dz6"/>
+                                <exclude reference="xxv-BO-edA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="vsLabel" destination="CjB-X8-skp" id="ySb-1L-2Mv"/>
+                        <outlet property="xo00" destination="APT-cU-guh" id="sBO-S1-xEv"/>
+                        <outlet property="xo01" destination="TVb-Dv-Gtq" id="Pr4-w1-idv"/>
+                        <outlet property="xo02" destination="gGm-4h-NEW" id="Xbq-kZ-u0N"/>
+                        <outlet property="xo10" destination="DsE-w4-cEd" id="1kf-tm-CsA"/>
+                        <outlet property="xo11" destination="csn-Ob-QIH" id="gc7-9E-TGL"/>
+                        <outlet property="xo12" destination="Ioj-pU-HuV" id="YGe-hF-lwG"/>
+                        <outlet property="xo20" destination="UpN-ns-pSy" id="Jbm-yy-7gz"/>
+                        <outlet property="xo21" destination="jgV-R6-QXk" id="ytv-vO-fQU"/>
+                        <outlet property="xo22" destination="9Gi-lf-m6H" id="8Xh-rO-LG6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXc-ZL-VAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492" y="1191"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -254,6 +355,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="board" width="600" height="600"/>
         <image name="first" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ti0-Mf-Smn"/>
+    </inferredMetricsTieBreakers>
 </document>

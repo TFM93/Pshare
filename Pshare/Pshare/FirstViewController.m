@@ -71,6 +71,7 @@
 
 - (IBAction)sendMessage:(id)sender {
     [self sendMyMessage];
+    [_mTS resignFirstResponder];
 }
 
 - (IBAction)cancelMessage:(id)sender {

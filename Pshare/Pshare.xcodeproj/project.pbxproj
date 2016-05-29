@@ -16,6 +16,7 @@
 		C0D609051CF8A2DB00C3E9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0D609031CF8A2DB00C3E9C2 /* LaunchScreen.storyboard */; };
 		C0D6090E1CF8ACF000C3E9C2 /* ConnectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D6090D1CF8ACF000C3E9C2 /* ConnectionsViewController.m */; };
 		C0D609131CF8C14500C3E9C2 /* MPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D609121CF8C14500C3E9C2 /* MPManager.m */; };
+		C0FA5BAD1CFBA3CD00F448AF /* TTTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FA5BAC1CFBA3CD00F448AF /* TTTViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		C0D6090D1CF8ACF000C3E9C2 /* ConnectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionsViewController.m; sourceTree = "<group>"; };
 		C0D609111CF8C14500C3E9C2 /* MPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPManager.h; sourceTree = "<group>"; };
 		C0D609121CF8C14500C3E9C2 /* MPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPManager.m; sourceTree = "<group>"; };
+		C0FA5BAB1CFBA3CD00F448AF /* TTTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTViewController.h; sourceTree = "<group>"; };
+		C0FA5BAC1CFBA3CD00F448AF /* TTTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 		C0D608F11CF8A2DB00C3E9C2 /* Pshare */ = {
 			isa = PBXGroup;
 			children = (
+				C0FA5BAB1CFBA3CD00F448AF /* TTTViewController.h */,
+				C0FA5BAC1CFBA3CD00F448AF /* TTTViewController.m */,
 				C0D609111CF8C14500C3E9C2 /* MPManager.h */,
 				C0D609121CF8C14500C3E9C2 /* MPManager.m */,
 				C0D608F51CF8A2DB00C3E9C2 /* AppDelegate.h */,
@@ -169,6 +174,7 @@
 				C0D608F71CF8A2DB00C3E9C2 /* AppDelegate.m in Sources */,
 				C0D608FA1CF8A2DB00C3E9C2 /* FirstViewController.m in Sources */,
 				C0D609131CF8C14500C3E9C2 /* MPManager.m in Sources */,
+				C0FA5BAD1CFBA3CD00F448AF /* TTTViewController.m in Sources */,
 				C0D608F41CF8A2DB00C3E9C2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +324,7 @@
 				C0D6090B1CF8A2DB00C3E9C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

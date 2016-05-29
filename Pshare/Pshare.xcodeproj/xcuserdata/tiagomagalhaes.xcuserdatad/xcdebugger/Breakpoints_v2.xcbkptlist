@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pshare/SecondViewController.m"
-            timestampString = "486225757.636302"
+            timestampString = "486252411.920933"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
