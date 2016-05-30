@@ -263,7 +263,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8rJ-Kc-sve" kind="show" id="ti0-Mf-Smn"/>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="ull-O7-Swd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFN-vX-03T">
@@ -358,7 +358,4 @@
         <image name="board" width="600" height="600"/>
         <image name="first" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="ti0-Mf-Smn"/>
-    </inferredMetricsTieBreakers>
 </document>
