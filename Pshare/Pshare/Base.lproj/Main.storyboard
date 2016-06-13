@@ -236,6 +236,7 @@
         <!--TicTacToe-->
         <scene sceneID="3mW-Oe-LvE">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXc-ZL-VAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="TicTacToe" id="uEm-Lm-8z5" customClass="TTTViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j0t-Fi-5a6"/>
@@ -282,10 +283,7 @@
                                 <rect key="frame" x="14" y="416" width="85" height="94"/>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Gi-lf-m6H">
-                                <rect key="frame" x="226" y="416" width="85" height="94"/>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ioj-pU-HuV">
-                                <rect key="frame" x="226" y="265" width="85" height="94"/>
+                                <rect key="frame" x="233" y="417" width="85" height="94"/>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gGm-4h-NEW">
                                 <rect key="frame" x="226" y="121" width="85" height="94"/>
@@ -296,7 +294,7 @@
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TVb-Dv-Gtq">
                                 <rect key="frame" x="118" y="121" width="85" height="94"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VS peerPlayer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjB-X8-skp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS peerPlayer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjB-X8-skp">
                                 <rect key="frame" x="54" y="70" width="226" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -305,32 +303,41 @@
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jgV-R6-QXk">
                                 <rect key="frame" x="125" y="416" width="85" height="94"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1I-Nl-aBb">
+                                <rect key="frame" x="83" y="83" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ioj-pU-HuV">
+                                <rect key="frame" x="230" y="265" width="85" height="94"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ZXw-ni-dz6"/>
                                 <exclude reference="xxv-BO-edA"/>
+                                <exclude reference="CjB-X8-skp"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="vsLabel" destination="CjB-X8-skp" id="ySb-1L-2Mv"/>
-                        <outlet property="xo00" destination="APT-cU-guh" id="sBO-S1-xEv"/>
-                        <outlet property="xo01" destination="TVb-Dv-Gtq" id="Pr4-w1-idv"/>
-                        <outlet property="xo02" destination="gGm-4h-NEW" id="Xbq-kZ-u0N"/>
-                        <outlet property="xo10" destination="DsE-w4-cEd" id="1kf-tm-CsA"/>
-                        <outlet property="xo11" destination="csn-Ob-QIH" id="gc7-9E-TGL"/>
-                        <outlet property="xo12" destination="Ioj-pU-HuV" id="YGe-hF-lwG"/>
-                        <outlet property="xo20" destination="UpN-ns-pSy" id="Jbm-yy-7gz"/>
-                        <outlet property="xo21" destination="jgV-R6-QXk" id="ytv-vO-fQU"/>
-                        <outlet property="xo22" destination="9Gi-lf-m6H" id="8Xh-rO-LG6"/>
+                        <outlet property="WhoseTurn" destination="a1I-Nl-aBb" id="bmo-Ni-vak"/>
+                        <outlet property="s1" destination="APT-cU-guh" id="l7e-vW-laz"/>
+                        <outlet property="s2" destination="TVb-Dv-Gtq" id="3yE-9p-4RT"/>
+                        <outlet property="s3" destination="gGm-4h-NEW" id="isf-h2-nEJ"/>
+                        <outlet property="s4" destination="DsE-w4-cEd" id="EUg-zb-Yvg"/>
+                        <outlet property="s5" destination="csn-Ob-QIH" id="V3s-k5-CdO"/>
+                        <outlet property="s6" destination="Ioj-pU-HuV" id="D7U-4e-HaB"/>
+                        <outlet property="s7" destination="UpN-ns-pSy" id="Rg3-G5-0Ya"/>
+                        <outlet property="s8" destination="jgV-R6-QXk" id="Kl9-6N-H01"/>
+                        <outlet property="s9" destination="9Gi-lf-m6H" id="uFg-cR-sp0"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hXc-ZL-VAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="492" y="1191"/>
+            <point key="canvasLocation" x="566" y="1155"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
