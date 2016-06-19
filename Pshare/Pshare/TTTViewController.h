@@ -38,7 +38,10 @@
     
     NSInteger numberOfPlays;
     
+    NSInteger count;
+    
     UIAlertView *myAlertView;
+    
     
     
 }
@@ -61,6 +64,7 @@
 
 @property (nonatomic, retain) UIAlertView *myAlertView;
 @property (nonatomic, retain) UILabel *whoseTurn;
+
 
 -(void)processingLogic;
 -(void)updatePlayerInfo;

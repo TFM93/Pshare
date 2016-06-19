@@ -15,5 +15,10 @@
 
 @property (nonatomic, strong) MPManager *mpManager;
 
+@property (nonatomic, retain) NSString *data;
+
+
+
+
 @end
 

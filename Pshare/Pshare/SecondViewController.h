@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 @interface SecondViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UILabel *gameDesc;
@@ -15,5 +17,14 @@
 - (IBAction)playButton:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UIButton *buttonP;
 
+//@property (nonatomic, retain) NSString *data_peer;
+
 @end
+
+
+
+
+
+
+
 

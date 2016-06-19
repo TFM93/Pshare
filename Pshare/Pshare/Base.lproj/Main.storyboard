@@ -236,7 +236,6 @@
         <!--TicTacToe-->
         <scene sceneID="3mW-Oe-LvE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hXc-ZL-VAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="TicTacToe" id="uEm-Lm-8z5" customClass="TTTViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j0t-Fi-5a6"/>
@@ -336,6 +335,7 @@
                         <outlet property="s9" destination="9Gi-lf-m6H" id="uFg-cR-sp0"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXc-ZL-VAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="566" y="1155"/>
         </scene>

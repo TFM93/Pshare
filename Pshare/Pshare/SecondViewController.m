@@ -28,9 +28,9 @@ NSString *ppeer;//possible peer to play
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    games = @[@"SelectGame",@"Tic Tac Toe",@"Game2",@"Game3",@"Game4",@"Game5",@"Game6"];
+    games = @[@"SelectGame",@"Tic Tac Toe",@"Game2",@"Game3",@"Game4"];
     //Todo- get all peers names
-    peersNames = @[@"All Peers",@"aaaa"];
+    peersNames = @[@"All Peers",@"Device connected"];
     peersIds =@[@-1,@2];
 
     
